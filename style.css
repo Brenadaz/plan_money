@@ -59,7 +59,6 @@ main {
 
 .titulo_grande:hover {
     color: #b93329;
-
 }
 
 .titulo_grande2 {
@@ -97,7 +96,6 @@ main {
     color: #495057;
     margin-bottom: 15px;
 }
-
 
 .classes {
     display: flex;
@@ -208,4 +206,52 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cabecalho_lista {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .titulo_grande {
+        font-size: 2em;
+    }
+
+    .titulo_grande2 {
+        font-size: 1.2em;
+    }
+
+    .caixa_maior {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .curso_titulo {
+        font-size: 1.8em;
+    }
+
+    .botao {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho_lista {
+        flex-direction: column;
+    }
+
+    .sobre_titulo {
+        font-size: 30px;
+    }
+
+    .sobre_texto {
+        font-size: 16px;
+    }
 }
