@@ -115,3 +115,46 @@ input[type="number"] {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+    header.cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul.cabecalho_lista {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 40px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho_logo {
+        max-width: 120px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
